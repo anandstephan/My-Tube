@@ -1,5 +1,5 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Home from '../screens/Home';
+import Home from '../screens/home/Home';
 import Library from '../screens/Library';
 import PublishVideo from '../screens/PublishVideo';
 import Shorts from '../screens/Shorts';
@@ -9,7 +9,9 @@ const Tab = createBottomTabNavigator();
 
 function BottomTabNavigator() {
   return (
-    <Tab.Navigator>
+    <Tab.Navigator screenOptions={{
+        headerShown:false
+    }}>
       <Tab.Screen name="Home" component={Home} />
       <Tab.Screen name="Shorts" component={Shorts} />
       <Tab.Screen name="Publish" component={PublishVideo} />
