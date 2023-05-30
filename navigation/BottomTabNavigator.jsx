@@ -17,6 +17,7 @@ function BottomTabNavigator() {
     }}>
       <Tab.Screen name="Home" component={Home}
       options={{
+   
         tabBarIcon:(({color,size}) => <Entypo name="home" size={size} color={color} />)
       }}
       />

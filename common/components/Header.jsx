@@ -3,7 +3,7 @@ import { FontAwesome5,Ionicons,EvilIcons,FontAwesome,AntDesign} from '@expo/vect
 
  const Header = () =>{
   
-    return <HStack justifyContent={'space-between'} alignItems={'center'}>
+    return <HStack justifyContent={'space-between'} alignItems={'center'} mb={2} mr={2}>
         <HStack alignItems={'center'} justifyContent={'space-between'} mx={2} w="25%">
         <AntDesign name="youtube" size={30} color="black" />
             <Text fontSize={16}>YouTube</Text>
