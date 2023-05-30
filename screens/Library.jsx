@@ -1,9 +1,10 @@
 
 import { View,Text } from "native-base"
+import Short from "../svg/Short"
 
 const Library = () =>{
 return <View>
-    <Text>Library</Text>
+        <Short/>
 </View>
 }
 

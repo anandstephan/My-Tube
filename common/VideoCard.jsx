@@ -19,7 +19,7 @@ const VideoCard = () => {
     useNativeControls
     resizeMode={ResizeMode.CONTAIN}
     isLooping
-    onPlaybackStatusUpdate={status => console.log(status.isPlaying)}
+    onPlaybackStatusUpdate={()=>{}}
   />
 
   )
