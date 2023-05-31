@@ -1,15 +1,22 @@
+import { useNavigation } from '@react-navigation/native';
 import { Video, ResizeMode } from 'expo-av';
 import React from 'react'
-import { StyleSheet } from 'react-native';
+import { Pressable, StyleSheet } from 'react-native';
+import { SPECIFIC_VIDEO } from '../../navigation/routes';
 
 const VideoCard = () => {
-
+  const navigation = useNavigation()
   const video = React.useRef(null);
   React.useEffect(()=>{
     // console.log("uid",video.current)
     video.current.playAsync()
   },[])
+
+  const onPressHandler = () =>{
+    navigation.navigate(SPECIFIC_VIDEO)
+  }
   return (
+    <Pressable onPress={onPressHandler}>
     <Video
     ref={video}
     style={styles.videoContainer}
@@ -21,7 +28,7 @@ const VideoCard = () => {
     isLooping
     onPlaybackStatusUpdate={()=>{}}
   />
-
+</Pressable>
   )
 }
 
