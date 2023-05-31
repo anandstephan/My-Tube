@@ -1,4 +1,5 @@
 import { Heading, HStack, Stack, VStack,Image, Text } from "native-base"
+import Comment from "./Comment"
 import CustomBtn from "./CustomBtn"
 import ShareList from "./SharetList"
 
@@ -19,6 +20,7 @@ return <VStack justifyContent={'center'} px={2} mb={2}>
             <CustomBtn/>
         </HStack>
         <ShareList/>
+        <Comment/>
 </VStack>
 }
 
