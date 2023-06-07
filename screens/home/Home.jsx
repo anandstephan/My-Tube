@@ -2,7 +2,7 @@ import { SafeAreaView, StyleSheet } from "react-native";
 import { FlatList, View } from "native-base"
 import VideoCard from "../../common/components/VideoCard";
 import Header from "../../common/components/Header";
-import HorizontalView from "./components/HorizontalView";
+import HorizontalView from "../../common/components/HorizontalView";
 import { useNavigation } from "@react-navigation/native";
 const Home = () =>{
   

@@ -1,11 +1,12 @@
 
-import { View,Text } from "native-base"
+import { Text } from "native-base"
+import { SafeAreaView } from "react-native"
 import Short from "../svg/Short"
 
 const Library = () =>{
-return <View>
+return <SafeAreaView>
         <Short/>
-</View>
+</SafeAreaView>
 }
 
 export default Library
